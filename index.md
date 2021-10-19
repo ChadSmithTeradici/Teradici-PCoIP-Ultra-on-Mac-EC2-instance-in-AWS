@@ -14,7 +14,7 @@ This tutorial shows you how to install Teradici PCoIP agent on a MAC Instance ru
 
 EC2 Mac instances are available for purchase as Dedicated Hosts through On Demand and Savings Plans pricing models. Billing for EC2 Mac instances is per second with a 24-hour minimum allocation period to comply with the Apple macOS Software License Agreement. Through On Demand, you can launch an EC2 Mac host and be up and running within minutes. At the end of the 24-hour minimum allocation period, the host can be released at any time without further commitment. 
 
-More Information on EC2 MAC Instance can be found [here](https://aws.amazon.com/ec2/instance-types/mac/)
+More Information on EC2 MAC Instance can be found [here](https://aws.amazon.com/ec2/instance-types/mac/).
 
 ## Objectives
 
