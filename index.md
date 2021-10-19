@@ -18,10 +18,9 @@ More Information on EC2 MAC Instance can be found [here](https://aws.amazon.com/
 
 ## Objectives
 
-+ Create a virtual workstation running Windows Server 2019 Base and Teradici PCoIP.
-+ Install SteamVR and NVIDIA CloudXR on the workstation.
-+ Load the CloudXR client on a virtual reality head-mounted display (HMD).
-+ Connect to the virtual workstation through the CloudXR client.
++ Allocate a AWS EC2 Mac Instance from AWS Console.
++ Configure Security Groups to allows access to instance (SSH,VNC & PCoIP ports).
++ Install supporting software and configure security parameters within Mac OS.
 
 ## Costs
 
