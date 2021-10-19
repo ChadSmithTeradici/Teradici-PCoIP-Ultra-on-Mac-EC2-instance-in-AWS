@@ -1,8 +1,8 @@
 ---
-title: Install Teradici PCoIP on AWS MAC instance
-description: Install guide for installing Teradici PCoIP on AWS Mac Instance, outside of AWS marketplace offering
+title: Install Teradici PCoIP on AWS  EC2 Mac instance
+description: Install guide for installing Teradici PCoIP on AWS Mac Instance, this is outside of AWS marketplace offering.
 author: chad-m-smith
-tags: teradici, AWS, Mac
+tags: teradici, AWS, Mac, EC2
 date_published: 2021-10-20
 ---
 
