@@ -1,8 +1,8 @@
 ---
 title: Install Teradici PCoIP on AWS MAC instance
-description: Install guide for installing Teradici PCoIP on AWS MAC Instance, outside of AWS marketplace offering
+description: Install guide for installing Teradici PCoIP on AWS Mac Instance, outside of AWS marketplace offering
 author: chad-m-smith
-tags: teradici, AWS, MAC
+tags: teradici, AWS, Mac
 date_published: 2021-10-20
 ---
 
@@ -10,7 +10,7 @@ Chad Smith | Technical Alliance Architect at Teradici | HP
 
 <p style="background-color:#CAFACA;"><i>Contributed by Teradici employees.</i></p>
 
-This tutorial shows you how to install Teradici PCoIP agent on a MAC Instance running in AWS. This is for customers that already have a PCoIP registation key and don't wish to procure Tearadici in the AWS marketplace. 
+This tutorial shows you how to install Teradici PCoIP agent on a MAC Instance running in AWS. Also this guide is inended for customers that have Teradici annual subcription and are interested in transfer licensed seats to AWS EC2 MAC instances. There is an option for an AWS marketplace hourly subscription that does not coincide with EC2 Mac instance 24hr minimum allocation peroid, that is NOT apart of this tutorial. 
 
 EC2 Mac instances are available for purchase as Dedicated Hosts through On Demand and Savings Plans pricing models. Billing for EC2 Mac instances is per second with a 24-hour minimum allocation period to comply with the Apple macOS Software License Agreement. Through On Demand, you can launch an EC2 Mac host and be up and running within minutes. At the end of the 24-hour minimum allocation period, the host can be released at any time without further commitment. 
 
