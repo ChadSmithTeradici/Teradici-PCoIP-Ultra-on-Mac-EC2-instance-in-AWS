@@ -35,7 +35,7 @@ Use the [AWS pricing calculator](https://calculator.aws/#/) to generate a cost e
 
 ## Before you begin
 
-In this section, you set up some basic resources that the tutorial depends on.
+In this section, you set up some basic resources that the guide depends on.
 
 1.  Open [Cloud Shell](https://cloud.google.com/shell/docs/starting-cloud-shell).
 
