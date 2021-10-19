@@ -31,7 +31,7 @@ This tutorial uses billable components of AWS Cloud and assumes Teradici subscri
 +   [AWS EC2 Mac Instance](https://aws.amazon.com/ec2/instance-types/mac/), including vCPUs, memory, disk, and GPUs
 +   [Internet egress and transfer costs](https://aws.amazon.com/blogs/architecture/overview-of-data-transfer-costs-for-common-architectures/), for PCoIP and other applications communications
 
-Use the [pricing calculator](https://cloud.google.com/products/calculator) to generate a cost estimate based on your projected usage.
+Use the [AWS pricing calculator](https://calculator.aws/#/) to generate a cost estimate based on your projected usage.
 
 ## Before you begin
 
