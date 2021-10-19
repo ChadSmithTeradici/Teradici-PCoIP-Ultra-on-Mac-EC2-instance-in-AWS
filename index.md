@@ -10,7 +10,7 @@ Chad Smith | Technical Alliance Architect at Teradici | HP
 
 <p style="background-color:#CAFACA;"><i>Contributed by Teradici employees.</i></p>
 
-This tutorial shows you how to install Teradici PCoIP agent on a MAC Instance running in AWS. This is for customers that already have a PCoIP registation key and don't wish to procure Tearadidi in the AWS marketplace;Quest&nbsp;2.
+This tutorial shows you how to install Teradici PCoIP agent on a MAC Instance running in AWS. This is for customers that already have a PCoIP registation key and don't wish to procure Tearadidi in the AWS marketplace.&nbsp;2.
 
 NVIDIA CloudXR is supported on a variety of [HMDs](https://developer.nvidia.com/nvidia-cloudxr-sdk#:~:text=NATIVELY%20SUPPORTED%20HMDs). This tutorial provides 
 instructions only for the [Oculus Quest 2](https://www.oculus.com/quest-2/). Where indicated, refer to the
