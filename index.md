@@ -14,7 +14,7 @@ This guide shows you how to install Teradici PCoIP agent on a Mac Instance runni
 
 EC2 Mac instances are available for purchase as Dedicated Hosts through On Demand and Savings Plans pricing models. Billing for EC2 Mac instances is per second with a 24-hour minimum allocation period to comply with the Apple macOS Software License Agreement. Through On Demand, you can launch an EC2 Mac host and be up and running within minutes. At the end of the 24-hour minimum allocation period, the host can be released at any time without further commitment. 
 
-More Information on EC2 MAC Instance can be found [here](https://aws.amazon.com/ec2/instance-types/mac/).
+More Information on EC2 MAC Instance can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html).
 
 ## Objectives
 
@@ -28,8 +28,8 @@ More Information on EC2 MAC Instance can be found [here](https://aws.amazon.com/
 This tutorial uses billable components of AWS Cloud and assumes Teradici subscription, including the following:
 
 +   [Teradici PCoIP](https://connect.teradici.com/contact-us), Teradici PCoIP subscriptions
-+   [Compute Engine](https://cloud.google.com/compute), including vCPUs, memory, disk, and GPUs
-+   [Internet egress](https://cloud.google.com/vpc/network-pricing) for streaming data to your HMD
++   [AWS EC2 Mac Instance](https://aws.amazon.com/ec2/instance-types/mac/), including vCPUs, memory, disk, and GPUs
++   [Internet egress and transfer costs](https://aws.amazon.com/blogs/architecture/overview-of-data-transfer-costs-for-common-architectures/), for PCoIP and other applications communications
 
 Use the [pricing calculator](https://cloud.google.com/products/calculator) to generate a cost estimate based on your projected usage.
 
