@@ -10,7 +10,7 @@ Chad Smith | Technical Alliance Architect at Teradici | HP
 
 <p style="background-color:#CAFACA;"><i>Contributed by Teradici employees.</i></p>
 
-This tutorial shows you how to install Teradici PCoIP agent on a MAC Instance running in AWS. This is for customers that already have a PCoIP registation key and don't wish to procure Tearadidi in the AWS marketplace. 
+This tutorial shows you how to install Teradici PCoIP agent on a MAC Instance running in AWS. This is for customers that already have a PCoIP registation key and don't wish to procure Tearadici in the AWS marketplace. 
 
 ## Objectives
 
