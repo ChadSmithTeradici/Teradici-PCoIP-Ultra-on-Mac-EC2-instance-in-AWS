@@ -21,12 +21,13 @@ More Information on EC2 MAC Instance can be found [here](https://aws.amazon.com/
 + Allocate a AWS EC2 Mac Instance from AWS Console.
 + Configure Security Groups to allows access to instance (SSH,VNC & PCoIP ports).
 + Install supporting software and configure security parameters within Mac OS.
++ Connect to EC2 Mac Instance via PCoIP client
 
 ## Costs
 
-This tutorial uses billable components of Google Cloud, including the following:
+This tutorial uses billable components of AWS Cloud and assumes Teradici subscription, including the following:
 
-+   [Teradici PCoIP](https://console.cloud.google.com/marketplace/product/teradici-public/teradici-cloud-access-software-windows-2019?q=teradici&id=19cf745d-fea7-4f68-8130-d3876623fd68&_ga=2.150954294.1862965037.1634676985-1894139970.1589168508&project=cloudxr-328117), including PCoIP, Windows 2019 Standard, Nvidia GRID license
++   [Teradici PCoIP](https://connect.teradici.com/contact-us), Teradici PCoIP subscriptions
 +   [Compute Engine](https://cloud.google.com/compute), including vCPUs, memory, disk, and GPUs
 +   [Internet egress](https://cloud.google.com/vpc/network-pricing) for streaming data to your HMD
 
