@@ -137,7 +137,7 @@ In this section, you will establish a connection to your instance using SSH, to 
 
     
     
-    [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
+        [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
     
 1.hghgj
     
