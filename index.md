@@ -158,7 +158,7 @@ In this section, you will establish a connection to your instance using SSH, to 
 + **Create a user account for PCoIP Connections** - The user name cannot contain spaces, and cannot be the root user account (the root user is an administrative account with elevated permissions, and is disabled by default in macOS).
 
 #### Installing with the Interface
-1.  [Download the installer](https://docs.teradici.com/find/product/cloud-access-software/current/graphics-agent-for-macos/21.07) to the machine you'll be using as the PCoIP host. You will need a Teradici registed login to gain access.
+1.  [Download the agent installer](https://docs.teradici.com/find/product/cloud-access-software/current/graphics-agent-for-macos/21.07) to the machine you'll be using as the PCoIP host. You will need a Teradici registed login to gain access.
 
 1. Run the `pcoip-agent-graphics_21.07.4.pkg`.
 
@@ -188,7 +188,9 @@ In this section, you will establish a connection to your instance using SSH, to 
 
 
 ## Install PCoIP Client to connect to Mac Host
-In this section, you will establish a connection to your instance using PCoIP, you will need to install a PCoIP client on your client that will be initiating the session to the EC2 Mac Instance in AWS.
+In this section, you will establish a connection to your instance using PCoIP, you will need to install a PCoIP client on your client that will be initiating the session to the EC2 Mac Instance in AWS. Depending on your network topology, use will either connect to the local IP (or) ephemeral/elastic Public IP (or) Fully Qualified Domain Names (FQDN)
+
+1. [Download the client installer](https://docs.teradici.com/find/product/software-and-mobile-clients) based on your client OS. You don't need a login credentials to download client software and can have as many copys of various client OS as you need.
 
 
 ## Clean up
