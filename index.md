@@ -120,7 +120,7 @@ In this section, you procure a mac1 type dedicated host in your region
 
 ### Set up the connection to your workstation
 
-In this section, you will establish a connection to your instance using SSH, to install VNC temporary GUI access to the Mac. There are some Teradici prerequisites configurations that can only be accomplished with the Mac GUI that and if not configured wouldn't allow the PCoIP protocol to establish a connection. 
+In this section, you will establish a connection to your instance using SSH, to install VNC temporary GUI access to the Mac. (some Teradici prerequisites configurations that can only be accomplished within the Mac GUI) Finally, PCoIP will be installed and configured via VNC session into the Mac GUI.
 
 1. On the **EC2 Dashboard**, select your **EC2 Mac Instance** and choose **Connect**.
 
