@@ -153,6 +153,8 @@ In this section, you will establish a connection to your instance using SSH, to 
 + Firewall - Becuase the AWS EC2 Mac Instance has a security group assoicated and configured, it is recommended to disable it (firewall is off)
 + Energy Saver - Energy Saver features can cause the remote system to go to sleep or become unresponsive. To prevent this, open **System Preferences > Energy Saver**, and configure the settings as follows:
 
+![image]https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/raw/main/images/Energy_saving.jpg
+
 
 
 ## Install Steam and SteamVR
