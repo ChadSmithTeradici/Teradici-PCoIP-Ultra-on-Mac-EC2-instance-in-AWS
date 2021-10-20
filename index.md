@@ -37,7 +37,7 @@ Use the [AWS pricing calculator](https://calculator.aws/#/) to generate a cost e
 
 In this section, you set up some basic resources that the guide depends on.
 
-1.  Allocate a Mac Dedicated Host in your account within the [EC2 Dashboard](https://console.aws.amazon.com/ec2. Choose Dedicated Hosts, then choose Allocate Dedicated Host.
+1.  Allocate a Mac Dedicated Host in your account within the [EC2 Dashboard](https://console.aws.amazon.com/ec2). Choose **Dedicated Hosts**, then choose **Allocate Dedicated Host**.
 
     Instructions in this guide assume that you have already have a AWS account setup and some general familiarity with AWS networking and best practices
     
