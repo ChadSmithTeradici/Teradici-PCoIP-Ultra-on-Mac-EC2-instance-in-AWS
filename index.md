@@ -224,11 +224,11 @@ In this section, you will establish a connection to your instance using PCoIP. Y
     
 1. Next, you will get a Cannot verify your connection to IP warning. This error is becuase a 3rd party trusted certificate has not been install on the host. You can select the **Connect Insecurely** option.
     
-    ![image](
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Trusted.jpg)
     
 1. Finally, enter in the macOS login credentials(**ec2-user** if not changed)that you used easier in your VNC session to log into the instance.
 
-    ![image](
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Auth.jpg)
 
 
 ## Clean up
