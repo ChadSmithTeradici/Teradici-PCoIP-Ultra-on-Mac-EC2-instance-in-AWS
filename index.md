@@ -138,9 +138,20 @@ In this section, you will establish a connection to your instance using SSH, to 
         sudo defaults write /var/db/launchd.db/com.apple.launchd/overrides.plist com.apple.screensharing -dict Disabled -bool false
         sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist
     
-1.hghgj
-    
+1. Run the following command to set a password for ec2-user:
 
+        sudo /usr/bin/dscl . -passwd /Users/ec2-user
+        
+1. Create an SSH tunnel to the VNC port. In the following command, replace keypair_file with your SSH key path and x.x.x.x with your instance's IP address.
+
+        ssh -i keypair_file -L 5900:localhost:5900 ec2-user@x.x.x.x
+        
+    Note: The SSH session should be running while you're in the remote session.
+    
+1. Using a VNC client, connect to instaceIP:5900
+
+    Note: macOS has a built-in VNC client. For Windows, you can use RealVNC viewer for Windows. For Linux, you can use Remmina. Other clients, such as TightVNC         running on Windows don't work with this resolution.
+    
 ### Install Chrome
 
 Install Google Chrome on the VM instance:
