@@ -124,7 +124,7 @@ In this section, you will establish a connection to your instance using SSH, to 
 
 1. On the **Connect to an instance** dialog, choose **SSH client**. Follow the instructions in the dialog for SSH client to connect to your mac1.metal instance
 
-### Install VNC dependencies and run
+### Configure VNC and start listener
 
 1. Run the following command in SSH session to install and start VNC (macOS screen sharing SSH) from the Mac instance:
         
