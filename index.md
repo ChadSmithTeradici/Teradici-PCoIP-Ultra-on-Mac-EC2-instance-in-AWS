@@ -94,6 +94,26 @@ In this section, you create a virtual workstation by starting with a configurati
     + For **Description**, optionally add a description.
     + For **Type**, choose **SSH**
     + For **Source**, choose **My IP**
+    + Select **Add rule**
+    + For **Type**, choose **Custom TCP Rule**
+    + For **Port Range** choose **HTTPS**
+    + For **Source**, choose **0.0.0.0/0**
+    + Select **Add rule**
+    + For **Type**, choose **Custom TCP Rule**
+    + For **Port Range** choose **4172**
+    + For **Source**, choose **0.0.0.0/0**
+    + Select **Add rule**
+    + For **Type**, choose **Custom UDP Rule**
+    + For **Port Range** choose **4172**
+    + For **Source**, choose **0.0.0.0/0**
+    + Select **Add rule**
+    + For **Type**, choose **Custom TCP Rule**
+    + For **Port Range** choose **5900**
+    + For **Source**, choose **0.0.0.0/0**
+    +  Select **Add rule**
+    + For **Type**, choose **Custom TCP Rule**
+    + For **Port Range** choose **5800**
+    + For **Source**, choose **0.0.0.0/0**
 
    
 1.  Set the following values to better accommodate the CloudXR workload:
