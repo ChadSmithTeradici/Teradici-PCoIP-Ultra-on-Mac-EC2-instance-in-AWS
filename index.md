@@ -182,9 +182,9 @@ In this section, you will establish a connection to your instance using SSH, to 
         
     The Graphics Agent for macOS must be assigned a valid PCoIP session license before it will work. Until you've registered it, you can't connect to the desktop using a PCoIP client. You receive a registration code when you purchase a pool of licenses from Teradici. Each registration code can be used multiple times; each use consumes one license in its pool.
     
-            Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
+      Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
         
-1. Restart the EC2 Instance
+1. **Restart** the EC2 Instance
 
 
 ## Install Steam and SteamVR
@@ -199,112 +199,6 @@ download and install.
 
 ## Install the CloudXR Server
 
-1.  On your virtual workstation, download and install [NVIDIA CloudXR SDK](https://developer.nvidia.com/nvidia-cloudxr-sdk).
-1.  Extract the downloaded archive and run `CloudXR-Setup.exe`, located under the subdirectory `Installer`.
-
-    If you are prompted with a "Windows protected your PC" warning, click **More Info**, and then click **Run anyway**.
-
-1.  When prompted, choose components for the server installation only:
-
-    1.  Select **CloudXR Server**.
-    1.  Deselect **CloudXR Client Program**.
-    1.  Ensure that the **Redistributables** checkbox is selected (required only for a first-time installation).
-
-## Install the Android Studio SDK
-
-To load files onto your HMD, you use the [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb), which is part of the
-[Android Studio SDK](https://developer.android.com/studio).
-
-1.  On your local workstation, download and install the [Android Studio SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools)
-    for your operating system.
-
-## Connect your workstation to your HMD
-
-1.  On your local workstation, download and extract **_but do not install_** the [NVIDIA CloudXR SDK](https://developer.nvidia.com/nvidia-cloudxr-sdk).
-1.  If required, enable Developer Mode on your device (typically only required on the
-    [Oculus Quest 2](https://developer.oculus.com/documentation/native/android/mobile-device-setup#enable-developer-mode)).
-1.  Connect your HMD to your workstation using the appropriate cable (typically USB 3.0).
-
-    You can also [connect over WiFi](https://developer.android.com/studio/command-line/adb#connect-to-a-device-over-wi-fi-android-11+).
-    
-1.  If prompted, select **Allow USB Debugging** on the HMD.
-1.  Verify that your HMD is connected by running the following in a command shell (terminal on Linux or Mac OS, PowerShell on Windows):  
-  
-        adb devices -l
-  
-    You should see your HMD listed, along with the status of the device, as in the following example output:
-
-        List of devices attached
-        1WMHHXXXXDXXXX         device usb:1-4.3 product:hollywood model:Quest_2 device:hollywood transport_id:1
-
-    If your HMD isn't listed, check your cable connections, verify that your USB port is USB 3.0, and repeat the steps in this section.
-
-## Install the sample application
-
-In this section, you install the sample application on your HMD. Sample apps for all supported HMDs are provided with the CloudXR SDK.
-
-**Note:** This section covers client installation only for the Oculus Quest 2. For other HMDs, see the
-[NVIDIA CloudXR documentation](https://docs.nvidia.com/cloudxr-sdk/index.html).
-
-1.  In a command shell on your local workstation, go to where you extracted the NVIDIA CloudXR SDK, and then go to the subdirectory that contains the sample app
-    for the Oculus Quest 2: `Sample/Android/OculusVR`.
-
-1.  Install the sample application on your Oculus Quest 2:  
-  
-        adb install -r ovr-sample.apk
-  
-    On the Oculus Quest 2, the CloudXR Client is located under **Apps > Unknown Sources**.
-
-## Install the configuration file
-
-1.  On your local workstation, create a plain-text file named `CloudXRLaunchOptions.txt` containing the following:  
-  
-        -s [VM-EXTERNAL-IP]
-
-    Replace `[VM-EXTERNAL-IP]` with the external IP address of your virtual workstation. You can find the external IP address of your VM using the
-    [Cloud Console](https://cloud.google.com/compute/docs/instances/view-ip-address#console), the
-    [`gcloud` command-line tool](https://cloud.google.com/compute/docs/instances/view-ip-address#gcloud), or the
-    [API](https://cloud.google.com/compute/docs/instances/view-ip-address#api).  
-  
-1.  Save the file on your local workstation.
-1.  In a terminal on your local workstation, load the configuration file onto your Oculus Quest 2:  
-
-        adb push CloudXRLaunchOptions.txt /sdcard/CloudXRLaunchOptions.txt
-
-1.  Disconnect the cable from the HMD.
-
-## Launch the CloudXR client
-
-Connect to your virtual workstation using the CloudXR client on your HMD.
-
-1.  On your local workstation, connect to your virtual workstation using a VNC client.
-1.  Launch SteamVR.
-
-    You will see the message *Headset Not Detected*:  
-
-    ![image](https://storage.googleapis.com/gcp-community/tutorials/streaming-vr-content-from-a-virtual-workstation-using-nvidia-cloudxr/headset-not-detected.png)
-
-1.  On your HMD, start the CloudXR Client.
-
-    The first time you launch the application, you are prompted on your HMD to grant permissions to allow access.
-    
-1.  Follow the prompts to allow access.
-
-When the connection is established, the SteamVR app shows the connection status of your HMD and controllers:
-
-![image](https://storage.googleapis.com/gcp-community/tutorials/streaming-vr-content-from-a-virtual-workstation-using-nvidia-cloudxr/headset-connected.png)
-
-The default CloudXR environment appears in your HMD display. You can preview this display on your virtual workstation by right-clicking the
-SteamVR icon on the taskbar and selecting **Display VR View**:
-
-![image](https://storage.googleapis.com/gcp-community/tutorials/streaming-vr-content-from-a-virtual-workstation-using-nvidia-cloudxr/display-vr-view.png)
-
-A window will open showing a preview of the CloudXR environment:
-
-![image](https://storage.googleapis.com/gcp-community/tutorials/streaming-vr-content-from-a-virtual-workstation-using-nvidia-cloudxr/cloudxr-env.png)
-
-You can now launch SteamVR games or experiences on your virtual workstation, where they will be streamed to your HMD. Any application that uses the
-[OpenVR SDK](https://en.wikipedia.org/wiki/OpenVR) will play over CloudXR, even ones not launched from SteamVR.
 
 ## Clean up
 
