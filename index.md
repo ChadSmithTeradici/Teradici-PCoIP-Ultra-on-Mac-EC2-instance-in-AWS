@@ -180,9 +180,8 @@ In this section, you will establish a connection to your instance using SSH, to 
     
         sudo pcoip-register-host --registration-code={REGISTRATION_CODE}
         
-    The Graphics Agent for macOS must be assigned a valid PCoIP session license before it will work. Until you've registered it, you can't connect to the desktop using a PCoIP client.
-
-    You receive a registration code when you purchase a pool of licenses from Teradici. Each registration code can be used multiple times; each use consumes one license in its pool.
+    The Graphics Agent for macOS must be assigned a valid PCoIP session license before it will work. Until you've registered it, you can't connect to the desktop using a PCoIP client. You receive a registration code when you purchase a pool of licenses from Teradici. Each registration code can be used multiple times; each use consumes one license in its pool.
+    
             Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
         
 1. Restart the EC2 Instance
