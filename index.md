@@ -188,9 +188,19 @@ In this section, you will establish a connection to your instance using SSH, to 
 
 
 ## Install PCoIP Client to connect to Mac Host
-In this section, you will establish a connection to your instance using PCoIP, you will need to install a PCoIP client on your client that will be initiating the session to the EC2 Mac Instance in AWS. Depending on your network topology, use will either connect to the local IP (or) ephemeral/elastic Public IP (or) Fully Qualified Domain Names (FQDN)
+In this section, you will establish a connection to your instance using PCoIP. You will need to install a PCoIP client on your client system that will be used to initiate the session to the EC2 Mac Instance in AWS. Depending on your network topology, use will either connect to the local IP (or) ephemeral/elastic Public IP (or) Fully Qualified Domain Names (FQDN)
 
 1. [Download the client installer](https://docs.teradici.com/find/product/software-and-mobile-clients) based on your client OS. You don't need a login credentials to download client software and can have as many copys of various client OS as you need.
+
+1. Install the PCoIP client software per the OSs Administration Guides installation instructions.
+
+1. Locate the **IP address** or **FQDN** of the AWS EC2 Mac Instance via the [EC2 Dashboard](https://console.aws.amazon.com/ec2)
+
+1. Identify the Mac Instance within the list of **Running Instances** in the EC2 Dashboard, check the **box** near the instance name, if it was named.
+
+1. Under the **Details** tab you will see **Public IPv4 Address** (or) **Private IPv4 Address** (or) **Private IPv4 DNS** (or) **Public IPv4 DNS**
+
+1. From the client system, start your PCoIP client per OS. Typically the PCoIP client will have a icon:
 
 
 ## Clean up
