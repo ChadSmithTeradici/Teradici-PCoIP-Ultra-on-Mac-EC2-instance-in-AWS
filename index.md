@@ -118,7 +118,7 @@ In this section, you procure a mac1 type dedicated host in your region
 
 1. On the **Instances** page, wait for the **Status Check** column of your instance to show 2/2 checks passed before continuing.
 
-## Set up the connection to your workstation
+### Set up the connection to your workstation
 
 In this section, you will establish a connection to your instance using SSH, to install VNC temporary GUI access to the Mac. There are some Teradici prerequisites configurations that can only be accomplished with the Mac GUI that and if not configured wouldn't allow the PCoIP protocol to establish a connection. 
 
@@ -126,7 +126,7 @@ In this section, you will establish a connection to your instance using SSH, to 
 
 1. On the **Connect to an instance** dialog, choose **SSH client**. Follow the instructions in the dialog for SSH client to connect to your mac1.metal instance
 
-### Configure VNC and start listener
+#### Configure VNC and start listener
 
 1. Run the following command in SSH session to install and start VNC (macOS screen sharing SSH) from the Mac instance:
         
@@ -147,7 +147,7 @@ In this section, you will establish a connection to your instance using SSH, to 
 
     Note: macOS has a built-in VNC client. For Windows, you can use RealVNC viewer for Windows. For Linux, you can use Remmina. Other clients, such as TightVNC         running on Windows don't work with this resolution.
     
-### Install Teradici PCoIP Agent
+#### Install Teradici PCoIP Agent
 
 
 
