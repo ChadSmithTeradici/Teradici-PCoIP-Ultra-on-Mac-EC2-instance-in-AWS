@@ -39,9 +39,16 @@ In this section, you set up some basic resources that the guide depends on.
 
 Instructions in this guide assume that you have a [AWS account](https://aws.amazon.com/free/) and some familiarity with AWS networking and best practices
 
-1.  Allocate a Mac Dedicated Host in your account within the [EC2 Dashboard](https://console.aws.amazon.com/ec2). Choose **Dedicated Hosts**, then choose **Allocate Dedicated Host**.
+1.  Allocate a Mac Dedicated Host within the [EC2 Dashboard](https://console.aws.amazon.com/ec2). Choose **Dedicated Hosts**, then choose **Allocate Dedicated Host**.
     
-1.  [Select or create a Google Cloud project.](https://console.cloud.google.com/projectselector2/home/dashboard)
+1.  On the **Allocate Dedicated Host** page, make the following selections:
+    + For **Name tag**, type EC2 Mac Dedicated Host
+    + For **Instance family**, choose **mac1**
+    + For **Support multiple instance** types, clear the **Enable** check box
+    + For **Instance type**, choose **mac1.metal**.
+    + For **Availability Zone**, choose any zone in your Region.
+
+    Keep the remaining default selections and choose **Allocate**.
 
 1.  [Enable billing for your project.](https://support.google.com/cloud/answer/6293499#enable-billing)
 1.  [Enable the Compute Engine API.](https://console.cloud.google.com/flows/enableapi?apiid=compute_component)
