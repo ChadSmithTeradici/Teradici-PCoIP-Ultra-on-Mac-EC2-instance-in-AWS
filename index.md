@@ -204,9 +204,11 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-icon.jpg)
 
-1. When the PCoIP client starts it will ask for a **Host Address or Code**, (0ptionally) there is a **Connection Name** field, if you want to save connection.
+1. When the PCoIP client starts, it will ask for a **Host Address or Code** (optionally) enter a name to **Connection Name** field, if you want to save connection.
 
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Client.jpg)
+    
+1. The next 
 
 
 
