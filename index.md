@@ -51,7 +51,7 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 In this section, you create and configure a virtual workstation, including setting up networking and installing utilities. 
 
-### Procure the Mac workstation
+### Procure the EC2 Mac Instance
 
 In this section, you procure a mac1 type dedicated host in your region
 
@@ -118,7 +118,7 @@ In this section, you procure a mac1 type dedicated host in your region
 
 1. On the **Instances** page, wait for the **Status Check** column of your instance to show 2/2 checks passed before continuing.
 
-## Set up the connection to your workstation
+## Set up the connection to your EC2 Mac Instance
 
 In this section, you will establish a connection to your instance using SSH, to install VNC temporary GUI access to the Mac. (some Teradici prerequisites configurations that can only be accomplished within the Mac GUI) Finally, PCoIP will be installed and configured via VNC session into the Mac GUI.
 
@@ -159,7 +159,7 @@ Once a VNC connection has been established, you can install and configure Teradi
      
 + **Create a user account for PCoIP Connections** - The user name cannot contain spaces, and cannot be the root user account (the root user is an administrative account with elevated permissions, and is disabled by default in macOS).
 
-#### Installing with the Interface
+#### Downloaing, installing, registering PCoIP
 1.  [Download the agent installer](https://docs.teradici.com/find/product/cloud-access-software/current/graphics-agent-for-macos/21.07) to the machine you'll be using as the PCoIP host. You will need a Teradici registed login to gain access.
 
 1. Run the `pcoip-agent-graphics_21.07.4.pkg`.
@@ -189,7 +189,7 @@ Once a VNC connection has been established, you can install and configure Teradi
 1. **Restart** the EC2 Instance
 
 
-## Install PCoIP Client to connect to Mac Host
+## Install PCoIP Client and connect to EC2 Mac Instance
 In this section, you will establish a connection to your instance using PCoIP. You will need to install a PCoIP client on your client system that will be used to initiate the session to the EC2 Mac Instance in AWS. Depending on your network topology, use will either connect to the local IP (or) ephemeral/elastic Public IP (or) Fully Qualified Domain Names (FQDN)
 
 1. [Download the client installer](https://docs.teradici.com/find/product/software-and-mobile-clients) based on your client OS. You don't need a login credentials to download client software and can have as many copys of various client OS as you need.
