@@ -226,22 +226,21 @@ In this section, you will establish a connection to your instance using PCoIP. Y
     
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Trusted.jpg)
     
-1. Finally, enter in the macOS login credentials(**ec2-user** if not changed)that you used easier in your VNC session to log into the instance.
+1. Finally, enter in the macOS login credentials(**ec2-user**, if not changed)that you used easier in your VNC session to log into the instance.
 
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Auth.jpg)
 
 
 ## Clean up
 
-To avoid incurring charges to your Google Cloud account for the resources used in this tutorial, you can delete the project:
+To avoid incurring charges to your AWS account for the resources used in this tutorial, you can simply delete the instance:
 
-1.  In the Cloud Console, go to the [Projects page](https://console.cloud.google.com/iam-admin/projects).
-1.  In the project list, select the project you want to delete and click **Delete**.
-1.  In the dialog, type the project ID, and then click **Shut down** to delete the project.
+1.  In the [EC2 Dashboard](https://console.aws.amazon.com/ec2) , go to the Mac **Instance State** scroll to **Terminate**
+1.  You can repurpose PCoIP floating seat, allow up to 24hrs for Teradici Cloud Licensing server to flush assoication to EC2 Mac Instance.
+1.  Note: if you delete instance before 24hr peroid. AWS will still charge you the remaining hours until 24hr peroid expires
 
 ## What's next
 
-+   Install SteamVR games and experiences and play them through your HMD.
-+   Learn more about [NVIDIA CloudXR SDK](https://developer.nvidia.com/nvidia-cloudxr-sdk).
-+   Read the [CloudXR documentation](https://docs.nvidia.com/cloudxr-sdk/index.html).
-+   Learn more about [creating a virtual workstation](https://cloud.google.com/architecture/creating-a-virtual-workstation).
++   [Configure and optimize](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/macos/21.07/admin-guide/configuring/configuring/) the PCoIP expereince on the EC2 Mac Instance. 
++   Learn more about [Teradici](https://www.teradici.com/) products and offerings.
++   Learn more about [AWS EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk&ab_channel=AmazonWebService
