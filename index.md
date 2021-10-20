@@ -148,6 +148,8 @@ In this section, you will establish a connection to your instance using SSH, to 
     Note: macOS has a built-in VNC client. For Windows, you can use RealVNC viewer for Windows. For Linux, you can use Remmina. Other clients, such as TightVNC         running on Windows don't work with this resolution.
     
 ### Install Teradici PCoIP Agent
+Once a VNC connection has been established, you can install and configure Teradici PCoIP within the macOS GUI.
+
 **Note**: Teradici PCoIP Agent for macOS Installation guide may change between releases, consult the [latest guides](https://docs.teradici.com/find/product/cloud-access-software) before continuing.
 
 + **Firewall** - Becuase the AWS EC2 Mac Instance has a security group assoicated and configured, it is recommended to disable it (firewall is off)
