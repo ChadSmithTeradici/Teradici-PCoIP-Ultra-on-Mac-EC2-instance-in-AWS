@@ -160,7 +160,7 @@ In this section, you will establish a connection to your instance using SSH, to 
 #### Installing with the Interface
 1.  [Download the installer](https://docs.teradici.com/find/product/cloud-access-software/current/graphics-agent-for-macos/21.07) to the machine you'll be using as the PCoIP host. You will need a Teradici registed login to gain access.
 
-1. Run the 'installer pkg'.
+1. Run the `pcoip-agent-graphics_21.07.4.pkg`.
 
 
 ## Install Steam and SteamVR
