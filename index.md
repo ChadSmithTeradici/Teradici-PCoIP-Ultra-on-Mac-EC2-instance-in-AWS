@@ -77,7 +77,7 @@ In this section, you create a virtual workstation by starting with a configurati
 
 1.  Launch a mac1.metal instance, On the [EC2 Dashboard](https://console.aws.amazon.com/ec2), choose **Launch Instance**.
 
-1. On the **Choose AMI** page, select the **macOS Catalina (10.15.7)** AMI
+1. On the **Choose AMI** page, select the **macOS Catalina (10.15.7)** or **macOS Big Sur (11.4)** AMI(s)
 
 1. On the **Choose Instance Type** page, keep the default selection of **mac1.metal instance** and choose **Next: Configure Instance Details**.
 
