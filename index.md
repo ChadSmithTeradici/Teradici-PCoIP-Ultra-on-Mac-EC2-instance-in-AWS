@@ -174,6 +174,19 @@ In this section, you will establish a connection to your instance using SSH, to 
 
 1. You will be prompted to allow **Screen Recording** permission. Grant and confirm privacy permissions for Screen Recording.
 
+1. Next, provide the license registration code you received from Teradici.
+
+    open a terminal window and type the following command:
+    
+        sudo pcoip-register-host --registration-code={REGISTRATION_CODE}
+        
+    The Graphics Agent for macOS must be assigned a valid PCoIP session license before it will work. Until you've registered it, you can't connect to the desktop using a PCoIP client.
+
+    You receive a registration code when you purchase a pool of licenses from Teradici. Each registration code can be used multiple times; each use consumes one license in its pool.
+            Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
+        
+1. Restart the EC2 Instance
+
 
 ## Install Steam and SteamVR
 
