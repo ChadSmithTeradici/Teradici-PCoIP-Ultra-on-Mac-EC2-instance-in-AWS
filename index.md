@@ -115,74 +115,26 @@ In this section, you create a virtual workstation by starting with a configurati
     + For **Port Range** choose **5800**
     + For **Source**, choose **0.0.0.0/0**
 
-Then, choose **Review** and **Launch**.
+    Then, choose **Review** and **Launch**.
 
 1. On the **Review page**, review your selections and verify that the **Host ID** matches the Dedicated Host you created earlier. Then, choose **Launch**.
 
 1. On the **Select an existing key pair or create a new key pair** dialog, verify your existing key pair (if you do not have a key pair, select the option to create a new key pair). Then, select the acknowlegement check box and choose **Launch Instances**.
 
-   
-1.  Set the following values to better accommodate the CloudXR workload:
-
-    1.  For **Zone**, choose a zone with the lowest latency to your location.
-    
-        You can use [GCP ping](https://gcping.com/) to determine the median latency to Google Cloud regions.
-        
-        GPU availability is limited to certain zones. Google Cloud Marketplace only lists zones where the NVIDIA T4 GPU is available.
-
-    1.  Set **Machine type** to **Custom**.
-    1.  Increase **Cores** to 12.
-    1.  Increase **Memory** to 64 GB.
-    1.  For faster disk performance, change **Boot disk type** to **SSD Persistent Disk**.
-    1.  Change the **Boot disk size in GB** value to **200** to increase disk performance and allow for more downloaded content.
-
-1.  Note the value in the **Deployment name** field; you use this in the next section, when setting up network access.
-1.  Click **Deploy**.
-
-### Add a firewall rule and network tags
-
-In this section, you create a firewall rule to allow access to the virtual workstation instance from your local workstation. CloudXR also requires
-other ports for remote access. This firewall rule allows access only from your public IP address.
-
-1.  Determine your local workstation's public IP address by going to [ifconfig.me](https://ifconfig.me/) in a web browser.
-1.  In Cloud Shell, run the following command to create a firewall rule, replacing `[PUBLIC-IP]` with your local workstation's public IP address:
-
-        gcloud compute firewall-rules create allow-cloudxr \  
-          --direction=INGRESS \  
-          --priority=1000 \  
-          --network=default \  
-          --action=ALLOW \  
-          --rules=tcp:3389,tcp:47998-48000,tcp:48002,tcp:48005,tcp:48010,udp:47998-48000,udp:48002,udp:48005,udp:48010 \  
-          --source-ranges=[PUBLIC-IP] \  
-          --target-tags=allow-cloudxr
-
-1.  Allow traffic to your workstation by adding a network tag to the instance:  
-
-        gcloud compute instances add-tags [NAME] \  
-          --tags=allow-cloudxr \  
-          --zone=[ZONE]
- 
-    Replace `[NAME]` with the name of your virtual workstation instance, and replace `[ZONE]` with your virtual workstation's zone.
+1. On the **Instances** page, wait for the **Status Check** column of your instance to show 2/2 checks passed before continuing.
 
 ## Set up the connection to your workstation
 
-In this section, you will establish a connection to your instance using Teradici the PCoIP protocol, if you have previously utilized Windows RDP for installation must continue in PCoIP because of a [limitation](https://steamcommunity.com/app/250820/discussions/0/3264459260617027967/) in SteamVR, CloudXR connections show a solid green display if connected through Microsoft RDP.
+In this section, you will establish a connection to your instance using SSH, to install VNC temporary GUI access to the Mac. There are some Teradici prerequisites configurations that can only be accomplished with the Mac GUI that and if not configured wouldn't allow the PCoIP protocol to establish a connection. 
 
-### Create a default Windows password and connect to your virtual workstation
+1. On the **EC2 Dashboard**, select your **EC2 Mac Instance** and choose **Connect**.
 
-1.  Create a Windows password for your user with the following
-    [`gcloud` command](https://cloud.google.com/compute/docs/instances/windows/creating-passwords-for-windows-instances#gcloud):  
-  
-        gcloud compute reset-windows-password [NAME] --zone=[ZONE]
+1. On the **Connect to an instance** dialog, choose **SSH client**. Follow the instructions in the dialog for SSH client to connect to your mac1.metal instance
 
-    Replace `[NAME]` with the name of your workstation, and replace `[ZONE]` with your workstation's zone.
+### Install VNC dependencies and run
 
-    You can also create a password with the
-    [Cloud Console](https://cloud.google.com/compute/docs/instances/windows/creating-passwords-for-windows-instances#console).
+1. Run the following command to install and start VNC (macOS screen sharing SSH) from the Mac instance
     
-1. Dowwnload and install an PCoIP client based on client OS - [PCoIP Client](https://docs.teradici.com/find/product/software-and-mobile-clients).
-  
-1.  Using an PCoIP client, log in to your workstation using the credentials returned by the previous command.
 
 ### Install Chrome
 
