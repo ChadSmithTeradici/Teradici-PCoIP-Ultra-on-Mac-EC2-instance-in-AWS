@@ -202,6 +202,10 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
 1. From the client system, start your PCoIP client per OS. Typically the PCoIP client will have a icon:
 
+![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-icon.jpg)
+
+1. gg
+
 
 ## Clean up
 
