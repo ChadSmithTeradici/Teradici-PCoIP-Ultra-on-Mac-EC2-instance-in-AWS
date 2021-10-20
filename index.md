@@ -47,11 +47,11 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 1. Have a [Teradici registerd login](https://help.teradici.com/s/login/SelfRegister) credentials in order to obtain PCoIP binaries from Teradici 
 
-## Set up the virtual workstation
+### Set up the virtual workstation
 
 In this section, you create and configure a virtual workstation, including setting up networking and installing utilities. 
 
-### Create the virtual workstation
+## Procure the Mac workstation
 
 In this section, you create a virtual workstation by starting with a configuration from the Google Cloud Marketplace and modifying some of its default settings.
 
@@ -124,7 +124,7 @@ In this section, you will establish a connection to your instance using SSH, to 
 
 1. On the **Connect to an instance** dialog, choose **SSH client**. Follow the instructions in the dialog for SSH client to connect to your mac1.metal instance
 
-### Install VNC dependencies and run
+## Install VNC dependencies and run
 
 1. Run the following command in SSH session to install and start VNC (macOS screen sharing SSH) from the Mac instance:
         
@@ -145,7 +145,7 @@ In this section, you will establish a connection to your instance using SSH, to 
 
     Note: macOS has a built-in VNC client. For Windows, you can use RealVNC viewer for Windows. For Linux, you can use Remmina. Other clients, such as TightVNC         running on Windows don't work with this resolution.
     
-### Install Teradici PCoIP Agent
+## Install Teradici PCoIP Agent
 
 
 
