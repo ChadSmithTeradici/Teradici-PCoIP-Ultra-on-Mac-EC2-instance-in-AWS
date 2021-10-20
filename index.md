@@ -37,12 +37,10 @@ Use the [AWS pricing calculator](https://calculator.aws/#/) to generate a cost e
 
 In this section, you set up some basic resources that the guide depends on.
 
-1.  Open [Cloud Shell](https://cloud.google.com/shell/docs/starting-cloud-shell).
+1.  Allocate a Mac Dedicated Host in your account within the [EC2 Dashboard](https://console.aws.amazon.com/ec2. Choose Dedicated Hosts, then choose Allocate Dedicated Host.
 
-    Instructions in this tutorial assume that you run commands in Cloud Shell, which is a
-    command-line interface in the Cloud Console that has the Cloud SDK installed. If you prefer, you can install the
-    [Google Cloud SDK](https://cloud.google.com/sdk/docs) on your local computer and run commands there.
-
+    Instructions in this guide assume that you have already have a AWS account setup and some general familiarity with AWS networking and best practices
+    
 1.  [Select or create a Google Cloud project.](https://console.cloud.google.com/projectselector2/home/dashboard)
 
 1.  [Enable billing for your project.](https://support.google.com/cloud/answer/6293499#enable-billing)
