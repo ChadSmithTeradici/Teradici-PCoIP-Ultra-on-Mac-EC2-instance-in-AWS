@@ -133,11 +133,10 @@ In this section, you will establish a connection to your instance using SSH, to 
 
 ### Install VNC dependencies and run
 
-1. Run the following command to install and start VNC (macOS screen sharing SSH) from the Mac instance:
-
-    
-    
-        [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
+1. Run the following command in SSH session to install and start VNC (macOS screen sharing SSH) from the Mac instance:
+        
+        sudo defaults write /var/db/launchd.db/com.apple.launchd/overrides.plist com.apple.screensharing -dict Disabled -bool false
+        sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist
     
 1.hghgj
     
