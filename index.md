@@ -39,16 +39,7 @@ In this section, you will allocated a dedicated Mac instance.
 
 Instructions in this guide assume that you have a [AWS account](https://aws.amazon.com/free/) and some familiarity with AWS networking and best practices
 
-1.  Allocate a Mac Dedicated Host within the [EC2 Dashboard](https://console.aws.amazon.com/ec2). Choose **Dedicated Hosts**, then choose **Allocate Dedicated Host**.
-    
-1.  On the **Allocate Dedicated Host** page, make the following selections:
-    + For **Name tag**, type EC2 Mac Dedicated Host
-    + For **Instance family**, choose **mac1**
-    + For **Support multiple instance** types, clear the **Enable** check box
-    + For **Instance type**, choose **mac1.metal**.
-    + For **Availability Zone**, choose any zone in your Region.
 
-    Keep the remaining default selections and choose **Allocate**.
 
 1.  [Enable billing for your project.](https://support.google.com/cloud/answer/6293499#enable-billing)
 1.  [Enable the Compute Engine API.](https://console.cloud.google.com/flows/enableapi?apiid=compute_component)
@@ -71,9 +62,24 @@ In this section, you create and configure a virtual workstation, including setti
 
 In this section, you create a virtual workstation by starting with a configuration from the Google Cloud Marketplace and modifying some of its default settings.
 
-1.  Go to the [Teradici Cloud Access Software-Graphics for Windows Server 2019](https://console.cloud.google.com/marketplace/product/teradici-public/teradici-cloud-access-software-windows-2019) page in the Google Cloud Marketplace
-  
-1.  Click **Launch**.
+1.  Allocate a Mac Dedicated Host within the [EC2 Dashboard](https://console.aws.amazon.com/ec2). Choose **Dedicated Hosts**, then choose **Allocate Dedicated Host**.
+    
+1.  On the **Allocate Dedicated Host** page, make the following selections:
+    + For **Name tag**, type EC2 Mac Dedicated Host
+    + For **Instance family**, choose **mac1**
+    + For **Support multiple instance** types, clear the **Enable** check box
+    + For **Instance type**, choose **mac1.metal**.
+    + For **Availability Zone**, choose any zone in your Region.
+
+    Keep the remaining default selections and choose **Allocate**.
+    
+1. Once allocated, the Dedicated Host appears with a status of **Available**. 
+
+1.  Launch a mac1.metal instance, On the [EC2 Dashboard](https://console.aws.amazon.com/ec2), choose **Launch Instance**.
+
+1. On the **Choose AMI** page, select the **macOS Catalina (10.15.7)** AMI
+
+1. On the **Choose Instance Type** page, keep the default selection of **mac1.metal instance** and choose **Next: Configure Instance Details**.
 
     If prompted to enable additional APIs, click **Enable**.
 
