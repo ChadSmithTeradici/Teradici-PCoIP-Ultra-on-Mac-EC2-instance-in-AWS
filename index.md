@@ -39,7 +39,7 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 1. Instructions in this guide assume that you have a [AWS account](https://aws.amazon.com/free/) 
 
-1. Ensure you have [Service Quotas] (https://console.aws.amazon.com/servicequotas) for **Running Dedicated mac1 Hosts**
+1. Ensure you have [Service Quotas](https://console.aws.amazon.com/servicequotas) for **Running Dedicated mac1 Hosts**
 
 1. Familiarize yourself with [AWS network topologies](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Networking.html)and best practices
 
