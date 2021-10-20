@@ -166,6 +166,18 @@ Once a VNC connection has been established, you can install and configure Teradi
 
 1. Click through the installer steps and accept the End User License Agreement. The agent application will be installed.
 
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Intro-1.jpg)
+    
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-ELUA-2.jpg)
+    
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-EULA-Agree-3.jpg)
+    
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Dest-4.jpg)
+    
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Perm-5.jpg)
+    
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Trash-6.jpg)
+    
 1. Open the PCoIP Agent application, found in:
 
         /System/Volumes/Data/Applications/PCoIP Agent.app
