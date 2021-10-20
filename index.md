@@ -226,7 +226,7 @@ In this section, you will establish a connection to your instance using PCoIP. Y
     
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Trusted.jpg)
     
-1. Finally, enter in the macOS login credentials(**ec2-user**, if not changed)that you used easier in your VNC session to log into the instance.
+1. Finally, enter in the macOS login credentials(**ec2-user**, if not changed)that you used previously in your VNC session to log into the instance.
 
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Auth.jpg)
 
