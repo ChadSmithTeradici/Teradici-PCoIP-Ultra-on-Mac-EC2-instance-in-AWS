@@ -35,7 +35,7 @@ Use the [AWS pricing calculator](https://calculator.aws/#/) to generate a cost e
 
 ## Before you begin
 
-In this section, you set up some basic resources that the guide depends on.
+In this section, you will allocated a dedicated Mac instance.
 
 Instructions in this guide assume that you have a [AWS account](https://aws.amazon.com/free/) and some familiarity with AWS networking and best practices
 
