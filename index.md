@@ -115,6 +115,12 @@ In this section, you create a virtual workstation by starting with a configurati
     + For **Port Range** choose **5800**
     + For **Source**, choose **0.0.0.0/0**
 
+Then, choose **Review** and **Launch**.
+
+1. On the **Review page**, review your selections and verify that the **Host ID** matches the Dedicated Host you created earlier. Then, choose **Launch**.
+
+1. On the **Select an existing key pair or create a new key pair** dialog, verify your existing key pair (if you do not have a key pair, select the option to create a new key pair). Then, select the acknowlegement check box and choose **Launch Instances**.
+
    
 1.  Set the following values to better accommodate the CloudXR workload:
 
