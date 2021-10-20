@@ -187,17 +187,8 @@ In this section, you will establish a connection to your instance using SSH, to 
 1. **Restart** the EC2 Instance
 
 
-## Install Steam and SteamVR
-
-In this section, you download and install [Steam](https://store.steampowered.com/) and [SteamVR](https://store.steampowered.com/steamvr). Both are free to 
-download and install.
-
-1.  On your virtual workstation, download, install, and launch [Steam](https://store.steampowered.com/about/).
-1.  To install SteamVR, right-click the Steam icon on the taskbar and select **SteamVR**. The application will download and install.
-1.  Launch SteamVR to initialize the software.
-1.  Quit both Steam and SteamVR.
-
-## Install the CloudXR Server
+## Install PCoIP Client to connect to Mac Host
+In this section, you will establish a connection to your instance using PCoIP, you will need to install a PCoIP client on your client that will be initiating the session to the EC2 Mac Instance in AWS.
 
 
 ## Clean up
