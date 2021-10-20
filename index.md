@@ -162,6 +162,16 @@ In this section, you will establish a connection to your instance using SSH, to 
 
 1. Run the `pcoip-agent-graphics_21.07.4.pkg`.
 
+1. Click through the installer steps and accept the End User License Agreement. The agent application will be installed.
+
+1. Open the PCoIP Agent application, found in ***/System/Volumes/Data/Applications/PCoIP Agent.app.***
+
+1. You will be prompted to allow **Accessibility** permission. Grant and confirm privacy permissions for Accessibility.
+
+1. Open the PCoIP Agent application again.
+
+1. You will be prompted to allow **Screen Recording** permission. Grant and confirm privacy permissions for Screen Recording.
+
 
 ## Install Steam and SteamVR
 
