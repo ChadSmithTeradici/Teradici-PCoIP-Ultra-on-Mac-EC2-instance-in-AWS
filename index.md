@@ -47,11 +47,11 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 1. Have a [Teradici registerd login](https://help.teradici.com/s/login/SelfRegister) credentials in order to obtain PCoIP binaries from Teradici 
 
-### Set up the virtual workstation
+## Set up the virtual workstation
 
 In this section, you create and configure a virtual workstation, including setting up networking and installing utilities. 
 
-## Procure the Mac workstation
+### Procure the Mac workstation
 
 In this section, you create a virtual workstation by starting with a configuration from the Google Cloud Marketplace and modifying some of its default settings.
 
@@ -116,7 +116,7 @@ In this section, you create a virtual workstation by starting with a configurati
 
 1. On the **Instances** page, wait for the **Status Check** column of your instance to show 2/2 checks passed before continuing.
 
-## Set up the connection to your workstation
+### Set up the connection to your workstation
 
 In this section, you will establish a connection to your instance using SSH, to install VNC temporary GUI access to the Mac. There are some Teradici prerequisites configurations that can only be accomplished with the Mac GUI that and if not configured wouldn't allow the PCoIP protocol to establish a connection. 
 
