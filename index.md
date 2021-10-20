@@ -55,7 +55,7 @@ In this section, you create and configure a virtual workstation, including setti
 
 In this section, you procure a mac1 type dedicated host in your region
 
-1. Select a AWS region that has [EC2 Mac Instances available](https://aws.amazon.com/ec2/instance-types/mac/) with hourly consumption rate.
+1. Select a AWS region that has [EC2 Mac Instances available](https://aws.amazon.com/ec2/instance-types/mac/) with a understanding of hourly consumption rate.
 
 1.  Allocate a Mac Dedicated Host within the [EC2 Dashboard](https://console.aws.amazon.com/ec2). Choose **Dedicated Hosts**, then choose **Allocate Dedicated Host**.
     
