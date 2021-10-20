@@ -35,24 +35,17 @@ Use the [AWS pricing calculator](https://calculator.aws/#/) to generate a cost e
 
 ## Before you begin
 
-In this section, you will allocated a dedicated Mac instance.
+In this section, you set up some basic resources that the tutorial depends on.
 
-Instructions in this guide assume that you have a [AWS account](https://aws.amazon.com/free/) and some familiarity with AWS networking and best practices
+1. Instructions in this guide assume that you have a [AWS account](https://aws.amazon.com/free/) 
 
+1. Ensure you have [Service Quotas]https://console.aws.amazon.com/servicequotas for **Running Dedicated mac1 Hosts**
 
+1. Familiarize yourself with [AWS network topologies] (https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Networking.html) and best practices
 
-1.  [Enable billing for your project.](https://support.google.com/cloud/answer/6293499#enable-billing)
-1.  [Enable the Compute Engine API.](https://console.cloud.google.com/flows/enableapi?apiid=compute_component)
-1.  Make sure that your project has quota for [virtual workstation GPUs](https://cloud.google.com/compute/docs/gpus#gpu-virtual-workstations) in your selected
-    [zone](https://cloud.google.com/compute/docs/gpus#gpus-list). You can check GPU availability with the following command:
-    
-        gcloud compute accelerator-types list
-1.  Confirm that your project contains a [default network](https://cloud.google.com/vpc/docs/vpc#default-network).
+1. Obtain a [Teradici PCoIP registation] (https://connect.teradici.com/contact-us) code that has at least one un-assigned seat available
 
-    If you've [disabled the creation of default networks](https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints) in your 
-    organization, then you must manually create an auto-mode VPC network named `default`.
-1.  Make sure that you have access to the [NVIDIA CloudXR SDK](https://developer.nvidia.com/nvidia-cloudxr-sdk). You can register for a free account at 
-    [developer.nvidia.com](https://developer.nvidia.com/).
+1. Have a [Teradici registerd login] (https://help.teradici.com/s/login/SelfRegister) credentials in order to obtain PCoIP binaries from Teradici 
 
 ## Set up the virtual workstation
 
@@ -142,7 +135,7 @@ In this section, you will establish a connection to your instance using SSH, to 
 
         sudo /usr/bin/dscl . -passwd /Users/ec2-user
         
-1. Create an SSH tunnel to the VNC port. In the following command, replace keypair_file with your SSH key path and x.x.x.x with your instance's IP address.
+1. Create an SSH tunnel to the VNC port. In the following command, replace keypair_file with your SSH key path and x.x.x.x with your instance's IP address:
 
         ssh -i keypair_file -L 5900:localhost:5900 ec2-user@x.x.x.x
         
@@ -152,31 +145,9 @@ In this section, you will establish a connection to your instance using SSH, to 
 
     Note: macOS has a built-in VNC client. For Windows, you can use RealVNC viewer for Windows. For Linux, you can use Remmina. Other clients, such as TightVNC         running on Windows don't work with this resolution.
     
-### Install Chrome
+### Install Teradici PCoIP Agent
 
-Install Google Chrome on the VM instance:
 
-1.  In your PCoIP session, launch PowerShell.
-1.  At the prompt, enable HTTPS requests:  
-
-        [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
-
-1.  Download the Chrome installer:  
-
-        $Installer = $env:TEMP + "\chrome_installer.exe";
-            Invoke-WebRequest
-            "http://dl.google.com/chrome/install/latest/chrome_installer.exe" -OutFile
-            $Installer
-
-1.  Run the Google Chrome installer:  
-  
-        Start-Process -FilePath $Installer -Args "/silent /install" -Verb RunAs -Wait
-
-    When you are prompted, allow the installer to make changes.
-
-1.  Remove the installer:  
-
-        Remove-Item $Installer
 
 ## Install Steam and SteamVR
 
