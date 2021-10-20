@@ -10,7 +10,7 @@ Chad Smith | Technical Alliance Architect at Teradici | HP
 
 <p style="background-color:#CAFACA;"><i>Contributed by Teradici employees.</i></p>
 
-This guide shows you how to install Teradici PCoIP agent on a Mac Instance running in AWS. Also this guide is inended for customers that have Teradici annual subcription and are interested in transfering licensed seats to a AWS EC2 MAC instance(s). There is an alternative option for a AWS marketplace hourly subscription which doesn't coincide with EC2 Mac instance 24hr minimum allocation peroid, AWS marketplace offering is NOT apart of this deployment guide. 
+This guide shows you how to install Teradici PCoIP agent on a Mac instance running in AWS. Also this guide is inended for customers that have Teradici annual subcription and are interested in transfering licensed seats to a AWS EC2 MAC instance(s). There is an alternative option for a AWS marketplace hourly subscription which doesn't coincide with EC2 Mac instance 24hr minimum allocation peroid, AWS marketplace offering is NOT apart of this deployment guide. 
 
 EC2 Mac instances are available for purchase as Dedicated Hosts through On Demand and Savings Plans pricing models. Billing for EC2 Mac instances is per second with a 24-hour minimum allocation period to comply with the Apple macOS Software License Agreement. Through On Demand, you can launch an EC2 Mac host and be up and running within minutes. At the end of the 24-hour minimum allocation period, the host can be released at any time without further commitment. 
 
@@ -118,7 +118,7 @@ In this section, you procure a mac1 type dedicated host in your region
 
 1. On the **Instances** page, wait for the **Status Check** column of your instance to show 2/2 checks passed before continuing.
 
-## Set up the connection to your EC2 Mac Instance
+## Set up the connection to your EC2 Mac instance
 
 In this section, you will establish a connection to your instance using SSH, to install VNC temporary GUI access to the Mac. (some Teradici prerequisites configurations that can only be accomplished within the Mac GUI) Finally, PCoIP will be installed and configured via VNC session into the Mac GUI.
 
@@ -208,9 +208,9 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
 1. Install the PCoIP client software per the OSs Administration Guides installation instructions.
 
-1. Locate the **IP address** or **FQDN** of the AWS EC2 Mac Instance via the [EC2 Dashboard](https://console.aws.amazon.com/ec2)
+1. Locate the **IP address** or **FQDN** of the AWS EC2 Mac instance via the [EC2 Dashboard](https://console.aws.amazon.com/ec2)
 
-1. Identify the Mac Instance within the list of **Running Instances** in the EC2 Dashboard, check the **box** near the instance name, if it was named.
+1. Identify the Mac instance within the list of **Running Instances** in the EC2 Dashboard, check the **box** near the instance name, if it was named.
 
 1. Under the **Details** tab you will see **Public IPv4 Address** (or) **Private IPv4 Address** (or) **Private IPv4 DNS** (or) **Public IPv4 DNS**
 
@@ -236,7 +236,7 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 To avoid incurring charges to your AWS account for the resources used in this tutorial, you can simply delete the instance:
 
 1.  In the [EC2 Dashboard](https://console.aws.amazon.com/ec2) , go to the Mac **Instance State** scroll to **Terminate**
-1.  You can repurpose PCoIP floating seat, allow up to 24hrs for Teradici Cloud Licensing server to flush assoication to EC2 Mac Instance.
+1.  You can repurpose PCoIP floating seat, allow up to 24hrs for Teradici Cloud Licensing server to flush assoication to EC2 Mac instance.
 1.  Note: if you delete instance before 24hr peroid. AWS will still charge you the remaining hours until 24hr peroid expires
 
 ## What's next
