@@ -81,10 +81,11 @@ In this section, you create a virtual workstation by starting with a configurati
 
 1. On the **Choose Instance Type** page, keep the default selection of **mac1.metal instance** and choose **Next: Configure Instance Details**.
 
-    If prompted to enable additional APIs, click **Enable**.
+1. On the **Configure Instance Details** page, for **Host**, choose the **Dedicated Host** you allocated earlier. For the remaining configuration details, make any selections you prefer. Then, choose **Next: Add Storage**.
 
-    By default, this virtual workstation configuration creates an instance with 2 vCPUs, 7.5 GB of RAM, and a 50 GB boot disk.
-    
+1. On the **Add Storage** page, choose the Size (GiB) cell and increase the volume based on your requirements. Then, choose **Next: Add Tags**.
+
+   
 1.  Set the following values to better accommodate the CloudXR workload:
 
     1.  For **Zone**, choose a zone with the lowest latency to your location.
