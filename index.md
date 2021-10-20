@@ -43,7 +43,7 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 1. Familiarize yourself with [AWS network topologies](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Networking.html)and best practices
 
-1. Obtain a [Teradici PCoIP registation](https://connect.teradici.com/contact-us)code that has at least one un-assigned seat available
+1. Obtain a [Teradici PCoIP registation](https://connect.teradici.com/contact-us) code that has at least one un-assigned seat available
 
 1. Have a [Teradici registerd login](https://help.teradici.com/s/login/SelfRegister) credentials in order to obtain PCoIP binaries from Teradici 
 
