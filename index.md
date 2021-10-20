@@ -157,8 +157,10 @@ In this section, you will establish a connection to your instance using SSH, to 
      
 + **Create a user account for PCoIP Connections** - The user name cannot contain spaces, and cannot be the root user account (the root user is an administrative account with elevated permissions, and is disabled by default in macOS).
 
-#### Installing With the Interface
-1.  [Download the installer](https://docs.teradici.com/find/product/cloud-access-software/current/graphics-agent-for-macos/21.07) to the machine you'll be using as the PCoIP host. You will need a Teradici registed login to gain access
+#### Installing with the Interface
+1.  [Download the installer](https://docs.teradici.com/find/product/cloud-access-software/current/graphics-agent-for-macos/21.07) to the machine you'll be using as the PCoIP host. You will need a Teradici registed login to gain access.
+
+1. Run the 'installer pkg'.
 
 
 ## Install Steam and SteamVR
