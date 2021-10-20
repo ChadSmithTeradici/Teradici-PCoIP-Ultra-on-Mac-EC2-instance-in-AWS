@@ -85,6 +85,16 @@ In this section, you create a virtual workstation by starting with a configurati
 
 1. On the **Add Storage** page, choose the Size (GiB) cell and increase the volume based on your requirements. Then, choose **Next: Add Tags**.
 
+1. On the **Add Tags page**, optionally add any Key:Value tags to your instance. Then, choose **Next: Configure Security Group**.
+
+1. On the Configure Security Group page, make the following selections:
+
+    + For **Assign a security group**, choose **Create a new security group**.
+    + For **Security group name**, type a descriptive name, such as *pcoip ssh into mac1.metal*.
+    + For **Description**, optionally add a description.
+    + For **Type**, choose **SSH**
+    + For **Source**, choose **My IP**
+
    
 1.  Set the following values to better accommodate the CloudXR workload:
 
