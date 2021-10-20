@@ -104,11 +104,11 @@ In this section, you procure a mac1 type dedicated host in your region
     + Select **Add rule**
     + For **Type**, choose **Custom TCP Rule**
     + For **Port Range** choose **5900**
-    + For **Source**, choose **0.0.0.0/0**
+    + For **Source**, choose **My IP**
     +  Select **Add rule**
     + For **Type**, choose **Custom TCP Rule**
     + For **Port Range** choose **5800**
-    + For **Source**, choose **0.0.0.0/0**
+    + For **Source**, choose **My IP**
 
     Then, choose **Review** and **Launch**.
 
