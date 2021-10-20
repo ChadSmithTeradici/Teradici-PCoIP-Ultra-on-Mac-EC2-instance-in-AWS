@@ -243,4 +243,4 @@ To avoid incurring charges to your AWS account for the resources used in this tu
 
 +   [Configure and optimize](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/macos/21.07/admin-guide/configuring/configuring/) the PCoIP expereince on the EC2 Mac Instance. 
 +   Learn more about [Teradici](https://www.teradici.com/) products and offerings.
-+   Learn more about [AWS EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk&ab_channel=AmazonWebService
++   Learn more about [AWS EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk&ab_channel=AmazonWebService)
