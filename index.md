@@ -70,7 +70,7 @@ In this section, you procure a mac1 type dedicated host in your region
     
 1. Once allocated, the Dedicated Host appears with a status of **Available**. 
 
-1.  Launch a mac1.metal instance, On the [EC2 Dashboard](https://console.aws.amazon.com/ec2), choose **Launch Instance**.
+1.  Launch a mac1.metal instance, on the [EC2 Dashboard](https://console.aws.amazon.com/ec2), choose **Launch Instance**.
 
 1. On the **Choose AMI** page, select the **macOS Catalina (10.15.7)** or **macOS Big Sur (11.4)** AMI(s)
 
