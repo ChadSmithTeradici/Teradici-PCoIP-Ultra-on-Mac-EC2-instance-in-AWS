@@ -1,6 +1,6 @@
 ---
 title: Install Teradici PCoIP on AWS  EC2 Mac instance
-description: Install guide for Teradici PCoIP on AWS Mac Instance. This is outside of an AWS marketplace offering.
+description: Learn how to deploy PCoIP Ultra on AWS EC2 Mac instance with a Teradici subscription plan![image](https://user-images.githubusercontent.com/92746483/138335837-42a75b6c-e29f-486c-aa42-ed63450269d7.png)
 author: chad-m-smith
 tags: Teradici, AWS, Mac, EC2
 date_published: 2021-10-20
