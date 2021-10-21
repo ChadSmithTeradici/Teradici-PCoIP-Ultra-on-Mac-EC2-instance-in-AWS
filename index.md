@@ -166,7 +166,7 @@ Once a VNC connection has been established, you can install and configure Teradi
 
 1. Click through the installer steps and accept the End User License Agreement. The agent application will be installed.
 
-    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Intro-1.jpg)
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/gh-pages/images/PCoIP-Intro-1.jpg)
     
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-ELUA-2.jpg)
     
