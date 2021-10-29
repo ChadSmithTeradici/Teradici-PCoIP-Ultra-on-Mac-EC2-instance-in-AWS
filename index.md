@@ -43,9 +43,9 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 1. Familiarize yourself with [AWS network](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Networking.html) topology and best practices.
 
-1. Obtain a [Teradici PCoIP registation](https://connect.teradici.com/contact-us) code that has at least one un-assigned seat available.
+1. Obtain a [Teradici PCoIP registration](https://connect.teradici.com/contact-us) code that has at least one un-assigned seat available.
 
-1. Have a [Teradici registerd login](https://help.teradici.com/s/login/SelfRegister) credentials in order to obtain **Graphics Agent for macOS**. 
+1. Have a [Teradici registered login](https://help.teradici.com/s/login/SelfRegister) credentials in order to obtain **Graphics Agent for macOS**. 
 
 ## Set up the virtual workstation
 
@@ -114,7 +114,7 @@ In this section, you procure a mac1 type dedicated host in your region
 
 1. On the **Review page**, review your selections and verify that the **Host ID** matches the Dedicated Host you created earlier. Then, choose **Launch**.
 
-1. On the **Select an existing key pair or create a new key pair** dialog, verify your existing key pair (if you do not have a key pair, select the option to create a new key pair). Then, select the acknowlegement check box and choose **Launch Instances**.
+1. On the **Select an existing key pair or create a new key pair** dialog, verify your existing key pair (if you do not have a key pair, select the option to create a new key pair). Then, select the acknowledgement check box and choose **Launch Instances**.
 
 1. On the **Instances** page, wait for the **Status Check** column of your instance to show 2/2 checks passed before continuing.
 
@@ -152,7 +152,7 @@ Once a VNC connection has been established, you can install and configure Teradi
 
 **Note**: Teradici PCoIP Agent for macOS Installation guide may change between releases, consult the [latest guides](https://docs.teradici.com/find/product/cloud-access-software) before continuing.
 
-+ **Firewall** - Becuase the AWS EC2 Mac Instance has a security group assoicated and configured, it is recommended to disable it (firewall is off)
++ **Firewall** - Because the AWS EC2 Mac Instance has a security group associated and configured, it is recommended to disable it (firewall is off)
 + **Energy Saver** - Energy Saver features can cause the remote system to go to sleep or become unresponsive. To prevent this, open **System Preferences > Energy Saver**, and configure the settings as follows:
 
      ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/raw/main/images/Energy_saving.jpg)
@@ -160,7 +160,7 @@ Once a VNC connection has been established, you can install and configure Teradi
 + **Create a user account for PCoIP Connections** - The user name cannot contain spaces, and cannot be the root user account (the root user is an administrative account with elevated permissions, and is disabled by default in macOS).
 
 #### Downloaing, installing, registering PCoIP
-1.  [Download the agent installer](https://docs.teradici.com/find/product/cloud-access-software/current/graphics-agent-for-macos/21.07) to the machine you'll be using as the PCoIP host. You will need a Teradici registed login to gain access.
+1.  [Download the agent installer](https://docs.teradici.com/find/product/cloud-access-software/current/graphics-agent-for-macos/21.07) to the machine you'll be using as the PCoIP host. You will need a Teradici registered login to gain access.
 
 1. Run the `pcoip-agent-graphics_21.07.4.pkg`.
 
@@ -214,7 +214,7 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
 1. Under the **Details** tab you will see **Public IPv4 Address** (or) **Private IPv4 Address** (or) **Private IPv4 DNS** (or) **Public IPv4 DNS**
 
-1. From the client system, start your PCoIP client per OS. Typically the PCoIP client will have a icon:
+1. From the client system, start your PCoIP client per OS. Typically, the PCoIP client will have a icon:
 
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/raw/main/images/PCoIP_icon.jpg)
 
@@ -222,11 +222,11 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/raw/main/images/PCoIP_Client.jpg)
     
-1. Next, you will get a Cannot verify your connection to IP warning. This error is becuase a 3rd party trusted certificate has not been install on the host. You can select the **Connect Insecurely** option.
+1. Next, you will get a Cannot verify your connection to IP warning. This error is because a 3rd party trusted certificate has not been install on the host. You can select the **Connect Insecurely** option.
     
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/raw/main/images/PCoIP_Trusted.jpg)
     
-1. Finally, enter in the macOS login credentials(**ec2-user**, if not changed)that you used previously in your VNC session to log into the instance.
+1. Finally, enter in the macOS login credentials (**ec2-user**, if not changed) that you used previously in your VNC session to log into the instance.
 
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/raw/main/images/PCoIP_Auth.jpg)
 
@@ -236,8 +236,8 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 To avoid incurring charges to your AWS account for the resources used in this tutorial, you can simply delete the instance:
 
 1.  In the [EC2 Dashboard](https://console.aws.amazon.com/ec2) , go to the Mac **Instance State** scroll to **Terminate**
-1.  You can repurpose PCoIP floating seat, allow up to 24hrs for Teradici Cloud Licensing server to flush assoication to EC2 Mac instance.
-1.  Note: if you delete instance before 24hr peroid. AWS will still charge you the remaining hours until 24hr peroid expires
+1.  You can repurpose PCoIP floating seat, allow up to 24hrs for Teradici Cloud Licensing server to flush association to EC2 Mac instance.
+1.  Note: if you delete instance before 24hr period. AWS will still charge you the remaining hours until 24hr period expires
 
 ## What's next
 
