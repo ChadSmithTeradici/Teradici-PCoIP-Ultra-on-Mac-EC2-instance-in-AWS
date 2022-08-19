@@ -177,16 +177,7 @@ Once a VNC connection has been established, you can install and configure Teradi
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP_Perm_5.jpg)
     
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP_Trash_6.jpg)
-    
-1. Open the PCoIP Agent application, found in:
-
-        /System/Volumes/Data/Applications/PCoIP Agent.app
-
-1. You will be prompted to allow **Accessibility** permission. Grant and confirm privacy permissions for Accessibility.
-
-1. Open the PCoIP Agent application again.
-
-1. You will be prompted to allow **Screen Recording** permission. Grant and confirm privacy permissions for Screen Recording.
+  
 
 1. Next, provide the license registration code you received from Teradici.
 
@@ -194,7 +185,7 @@ Once a VNC connection has been established, you can install and configure Teradi
     
         sudo pcoip-register-host --registration-code={REGISTRATION_CODE}
         
-    The Graphics Agent for macOS must be assigned a valid PCoIP session license before it will work. Until you've registered it, you can't connect to the desktop using a PCoIP client. You receive a registration code when you purchase a pool of licenses from Teradici. Each registration code can be used multiple times; each use consumes one license in its pool.
+    The Graphics Agent for macOS must be assigned a valid PCoIP session license before it will work. Until you've registered it, you can't connect to the desktop using a PCoIP client. You receive a registration code when you purchase a pool of licenses from Teradici. Each registration code can be ued multiple times; each use consumes one license in its pool.
     
       Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
       
@@ -209,7 +200,7 @@ Once a VNC connection has been established, you can install and configure Teradi
     
  1. Close the Security & Privacy menu and reopen the PCoIP menu to get MAC instance for show the screen recoding permissions. Ensure the box is checked next to PCoIP Agent and close the Security & Privacy. 
  
-   ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Ultra-on-Mac-EC2-instance-in-AWS/blob/main/images/PCoIP-MAC-Screen.png)
+     ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Ultra-on-Mac-EC2-instance-in-AWS/blob/main/images/PCoIP-MAC-Screen.png)
         
 1. **Restart** the EC2 Instance
 
