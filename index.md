@@ -200,9 +200,12 @@ Once a VNC connection has been established, you can install and configure Teradi
       
 #### Grant MAC OS level permissions to run PCoIP Agent on Instance
 
-1. Start the PCoIP Agent from the Applications menu. The first time the application is "clicked-on" it will open the MAC Accessibility Menu
+1. Start the PCoIP Agent from the Applications menu. The first time the application is "clicked-on" it will open the MAC Accessibility menu
    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Ultra-on-Mac-EC2-instance-in-AWS/blob/main/images/PCoIP-MAC-Icon.png)  
+   
 1. In the 
+
+![image]
         
 1. **Restart** the EC2 Instance
 
