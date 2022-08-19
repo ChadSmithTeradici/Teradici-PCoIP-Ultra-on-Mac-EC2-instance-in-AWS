@@ -205,11 +205,11 @@ Once a VNC connection has been established, you can install and configure Teradi
    
 1. In the Security & Privacy it will show the accessibility tab, where the check-box next to the PCoIP Agent
 
-    ![image]https://github.com/ChadSmithTeradici/Teradici-PCoIP-Ultra-on-Mac-EC2-instance-in-AWS/blob/main/images/PCoIP-MAC-Accessibility.png
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Ultra-on-Mac-EC2-instance-in-AWS/blob/main/images/PCoIP-MAC-Accessibility.png)
     
- 1. Close the Security & Privacy menu and reopen the PCoIP menu to get MAC instance for show the screen recoding permissions.
+ 1. Close the Security & Privacy menu and reopen the PCoIP menu to get MAC instance for show the screen recoding permissions. Ensure the box is checked next to PCoIP Agent and close the Security & Privacy. 
  
- 
+   ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Ultra-on-Mac-EC2-instance-in-AWS/blob/main/images/PCoIP-MAC-Screen.png)
         
 1. **Restart** the EC2 Instance
 
