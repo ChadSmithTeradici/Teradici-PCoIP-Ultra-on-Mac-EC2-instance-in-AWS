@@ -197,7 +197,12 @@ Once a VNC connection has been established, you can install and configure Teradi
     The Graphics Agent for macOS must be assigned a valid PCoIP session license before it will work. Until you've registered it, you can't connect to the desktop using a PCoIP client. You receive a registration code when you purchase a pool of licenses from Teradici. Each registration code can be used multiple times; each use consumes one license in its pool.
     
       Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
-1. Apply permissions for       
+      
+#### Grant MAC OS level permissions to run PCoIP Agent on Instance
+
+1. Start the PCoIP Agent from the Applications menu. The first time the application is "clicked-on" it will open the MAC Accessibility Menu
+   ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Ultra-on-Mac-EC2-instance-in-AWS/blob/main/images/PCoIP-MAC-Icon.png)  
+1. In the 
         
 1. **Restart** the EC2 Instance
 
